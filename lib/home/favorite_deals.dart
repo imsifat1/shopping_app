@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../constants/responsive.dart';
+import '../widgets/sectionTitle.dart';
 
 class FavouriteDeals extends StatelessWidget {
   const FavouriteDeals({Key? key}) : super(key: key);
@@ -13,10 +13,7 @@ class FavouriteDeals extends StatelessWidget {
       width: size.width * 0.7,
       child: Column(
         children: [
-          Text('Shop By Deals', style: TextStyle(fontSize: 30.sp),),
-          SizedBox(height: 10.h,),
-          Text('BROWSE FAVORITE DEALS', style: TextStyle(fontSize: 10.sp, color: Colors.grey),),
-          SizedBox(height: 10.h,),
+          sectionTitle('Shop By Deals', 'BROWSE FAVORITE DEALS'),
 
             Row(
               mainAxisSize: MainAxisSize.max,
@@ -32,4 +29,6 @@ class FavouriteDeals extends StatelessWidget {
       ),
     );
   }
+
+
 }

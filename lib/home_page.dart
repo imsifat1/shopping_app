@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'home/category_section.dart';
 import 'home/favorite_deals.dart';
 import 'home/slider_page.dart';
+import 'home/top_trending.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key, required String title}) : super(key: key);
@@ -17,7 +18,8 @@ class HomePage extends StatelessWidget {
             SliderPage(),
             CategorySection(),
             FavouriteDeals(),
-            SizedBox(height: 10,)
+            SizedBox(height: 30,),
+            TopTrending()
           ],
         ),
       ),
